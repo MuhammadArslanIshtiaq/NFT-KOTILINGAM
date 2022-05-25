@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 const RoadMapSection = () => {
   const RoadMapList = [
     {
@@ -128,9 +128,11 @@ const RoadMapSection = () => {
   return (
     <section id='roadMap' className='py-12 relative'>
       <div className='mb-8 text-center'>
-        <h1 className='mb-0 text-[1.8rem] sm:text-[3.125rem] font-titleBold underline'>
-          Roadmap
-        </h1>
+        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+          <h1 className='mb-0 text-[1.8rem] sm:text-[3.125rem] font-titleBold underline'>
+            Roadmap
+          </h1>
+        </ScrollAnimation>
       </div>
       <div className='md:bg-center bg-cover bg-roadMapM md:bg-roadMapD py-6'>
         <div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-full relative'>
@@ -143,29 +145,44 @@ const RoadMapSection = () => {
                     <div className='flex flex-row-reverse md:contents'>
                       <div className='col-start-1 col-end-5 p-4 my-4 ml-auto'>
                         {/* on small title */}
-                        <div className='flex justify-between sm:hidden mb-10'>
-                          <h4 className='text-2xl font-titleBold capitalize'>
-                            {RoadMapList.title}
-                          </h4>
-                          <h4 className='text-lg font-normal text-primary uppercase'>
-                            {RoadMapList.date}
-                          </h4>
-                        </div>
+                        <ScrollAnimation
+                          animateIn='fadeIn'
+                          animateOut='fadeOut'
+                        >
+                          <div className='flex justify-between sm:hidden mb-10'>
+                            <h4 className='text-2xl font-titleBold capitalize'>
+                              {RoadMapList.title}
+                            </h4>
+                            <h4 className='text-lg font-normal text-primary uppercase'>
+                              {RoadMapList.date}
+                            </h4>
+                          </div>
+                        </ScrollAnimation>
                         {/* /on small title */}
-                        <h3 className='text-3xl font-titleBold capitalize mb-3 hidden sm:block'>
-                          {RoadMapList.title}
-                        </h3>
-                        <ul className='flex flex-col gap-4 list-disc marker:text-primary marker:text-[1.5rem] text-[1rem] font-normal pl-5'>
-                          {RoadMapList.list}
-                        </ul>
+                        <ScrollAnimation
+                          animateIn='fadeInLeft'
+                          animateOut='fadeOutLeft'
+                        >
+                          <h3 className='text-3xl font-titleBold capitalize mb-3 hidden sm:block'>
+                            {RoadMapList.title}
+                          </h3>
+                          <ul className='flex flex-col gap-4 list-disc marker:text-primary marker:text-[1.5rem] text-[1rem] font-normal pl-5'>
+                            {RoadMapList.list}
+                          </ul>
+                        </ScrollAnimation>
                       </div>
                       <div className='col-start-5 col-end-6 md:mx-auto relative mr-10 hidden sm:block'>
                         <div className='h-full w-6 flex items-center justify-center'>
                           <div className='h-full w-0.5 bg-gray-800 pointer-events-none' />
                         </div>
-                        <div className='absolute top-1/4 left-[60%] transform translate-x-[-50%] -mt-3 w-28 p-4 text-[1rem] font-normal text-center bg-ebony rounded-3xl bg-opacity-60 text-primary uppercase'>
-                          {RoadMapList.date}
-                        </div>
+                        <ScrollAnimation
+                          animateIn='fadeIn'
+                          animateOut='fadeOut'
+                        >
+                          <div className='absolute top-1/4 left-[60%] transform translate-x-[-50%] -mt-3 w-28 p-4 text-[1rem] font-normal text-center bg-ebony rounded-3xl bg-opacity-60 text-primary uppercase'>
+                            {RoadMapList.date}
+                          </div>
+                        </ScrollAnimation>
                       </div>
                     </div>
                   )}
@@ -175,27 +192,42 @@ const RoadMapSection = () => {
                         <div className='h-full w-6 flex items-center justify-center'>
                           <div className='h-full w-0.5 bg-gray-800 pointer-events-none' />
                         </div>
-                        <div className='absolute top-1/4 left-[60%] transform translate-x-[-50%] -mt-3 w-28 p-4 text-[1rem] font-normal text-center bg-ebony rounded-3xl bg-opacity-60 text-primary'>
-                          {RoadMapList.date}
-                        </div>
+                        <ScrollAnimation
+                          animateIn='fadeIn'
+                          animateOut='fadeOut'
+                        >
+                          <div className='absolute top-1/4 left-[60%] transform translate-x-[-50%] -mt-3 w-28 p-4 text-[1rem] font-normal text-center bg-ebony rounded-3xl bg-opacity-60 text-primary'>
+                            {RoadMapList.date}
+                          </div>
+                        </ScrollAnimation>
                       </div>
                       <div className='col-start-6 col-end-10 p-4 my-4 mr-auto'>
                         {/* on small title */}
                         <div className='flex justify-between sm:hidden mb-10'>
-                          <h4 className='text-2xl font-titleBold capitalize'>
-                            {RoadMapList.title}
-                          </h4>
-                          <h4 className='text-lg font-normal text-primary uppercase'>
-                            {RoadMapList.date}
-                          </h4>
+                          <ScrollAnimation
+                            animateIn='fadeIn'
+                            animateOut='fadeOut'
+                          >
+                            <h4 className='text-2xl font-titleBold capitalize'>
+                              {RoadMapList.title}
+                            </h4>
+                            <h4 className='text-lg font-normal text-primary uppercase'>
+                              {RoadMapList.date}
+                            </h4>
+                          </ScrollAnimation>
                         </div>
                         {/* /on small title */}
-                        <h3 className='text-3xl font-titleBold mb-3 hidden sm:block'>
-                          {RoadMapList.title}
-                        </h3>
-                        <ul className='flex flex-col gap-4 list-disc marker:text-primary marker:text-[1.5rem] text-[1rem] font-normal pl-5'>
-                          {RoadMapList.list}
-                        </ul>
+                        <ScrollAnimation
+                          animateIn='fadeInRight'
+                          animateOut='fadeOutRight'
+                        >
+                          <h3 className='text-3xl font-titleBold mb-3 hidden sm:block'>
+                            {RoadMapList.title}
+                          </h3>
+                          <ul className='flex flex-col gap-4 list-disc marker:text-primary marker:text-[1.5rem] text-[1rem] font-normal pl-5'>
+                            {RoadMapList.list}
+                          </ul>
+                        </ScrollAnimation>
                       </div>
                     </div>
                   )}

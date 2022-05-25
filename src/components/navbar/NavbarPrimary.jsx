@@ -51,7 +51,7 @@ export default function NavbarPrimary() {
                 </Disclosure.Button>
               </div>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='flex-shrink-0 flex items-center'>
+                <div className='flex-shrink-0 flex items-center animated fadeInLeftBig'>
                   <img
                     className='block h-11 w-auto'
                     src='/assets/images/logo.svg'
@@ -69,7 +69,8 @@ export default function NavbarPrimary() {
                           active === item.name
                             ? 'text-primary'
                             : 'text-white hover:text-primary',
-                          'font-normal text-[1rem]'
+                          'font-normal text-[1rem] animated fadeInDownBig',
+                          item.durationClass
                         )}
                       >
                         {item.name}
@@ -84,13 +85,13 @@ export default function NavbarPrimary() {
                     href='https://discord.com/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='inline-flex items-center px-8 py-2 border-2 shadow-sm text-base font-medium rounded-xl text-[1rem] bg-transparent text-white border-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3'
+                    className='inline-flex items-center px-8 py-2 border-2 shadow-sm text-base font-medium rounded-xl text-[1rem] bg-transparent text-white border-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3 animated fadeInDownBig'
                   >
                     Join Discord
                   </a>
                   <button
                     type='button'
-                    className='inline-flex items-center px-8 py-2 border-2 shadow-sm text-base font-medium rounded-xl text-[1rem] bg-primary text-black border-primary hover:text-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3'
+                    className='inline-flex items-center px-8 py-2 border-2 shadow-sm text-base font-medium rounded-xl text-[1rem] bg-primary text-black border-primary hover:text-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3 animated fadeInDownBig'
                   >
                     Connect Wallet
                   </button>
@@ -101,7 +102,7 @@ export default function NavbarPrimary() {
                     href='https://discord.com/'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='transition transform hover:scale-110 active:scale-110 focus:scale-110 duration-200'
+                    className='transition transform hover:scale-110 active:scale-110 focus:scale-110 duration-200 animated fadeInDownBig'
                   >
                     <span>
                       <img
@@ -113,7 +114,7 @@ export default function NavbarPrimary() {
                   </a>
                   <button
                     type='button'
-                    className='transition transform hover:scale-110 active:scale-110 focus:scale-110 duration-200'
+                    className='transition transform hover:scale-110 active:scale-110 focus:scale-110 duration-200 animated fadeInDownBig'
                   >
                     <span>
                       <img
