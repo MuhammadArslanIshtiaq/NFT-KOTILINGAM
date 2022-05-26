@@ -25,7 +25,7 @@ const ConnectSection = () => {
                   <li>
                     <a
                       className="block h-10 w-10 transition-all duration-500 transform hover:-rotate-12"
-                      href="http://www.twitter.com"
+                      href="https://twitter.com/kotilingam_nft"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -53,7 +53,7 @@ const ConnectSection = () => {
                   <li>
                     <a
                       className="block h-10 w-10 transition-all duration-500 transform hover:-rotate-12"
-                      href="http://www.discord.com"
+                      href="https://discord.gg/rpDTDUFU8U"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -67,7 +67,7 @@ const ConnectSection = () => {
                   <li>
                     <a
                       className="block h-10 w-10 transition-all duration-500 transform hover:-rotate-12"
-                      href="http://www.instagram.com"
+                      href="https://www.instagram.com/kotilingam_nft"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
