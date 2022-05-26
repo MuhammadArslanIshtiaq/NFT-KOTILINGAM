@@ -1,6 +1,7 @@
 import React, { useCallback, useRef } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 // icons
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
@@ -34,51 +35,55 @@ const TopCollectionsSection = () => {
     <section className='py-8 md:py-16 bg-gray-800 bg-shadow bg-cover bg-top'>
       <div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-full relative'>
         <div className='mb-8 md:mb-14 text-center'>
-          <h1 className='mb-0 text-[1.8rem] sm:text-[3.125rem] font-titleBold underline'>
-            Top Collections
-          </h1>
+          <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+            <h1 className='mb-0 text-[1.8rem] sm:text-[3.125rem] font-titleBold underline'>
+              Top Collections
+            </h1>
+          </ScrollAnimation>
         </div>
-        <div className='flex gap-3 md:gap-6 items-center'>
-          <button
-            type='button'
-            className=' bg-ebonyClay p-2 rounded-full border border-gray-600 text-white hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-600 prev-arrow'
-            onClick={handlePrev}
-          >
-            <ChevronLeftIcon className='h-4 w-4' />
-          </button>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            ref={sliderRef}
-            breakpoints={{
-              500: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              800: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1180: {
-                slidesPerView: 4,
-                spaceBetween: 25,
-              },
-            }}
-          >
-            {CollectionsList.map((item) => (
-              <SwiperSlide key='Collections'>
-                <CollectionsCard item={item} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <button
-            type='button'
-            className=' bg-ebonyClay p-2 rounded-full border border-gray-600 text-white hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-600 next-arrow'
-            onClick={handleNext}
-          >
-            <ChevronRightIcon className='h-4 w-4' />
-          </button>
-        </div>
+        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+          <div className='flex gap-3 md:gap-6 items-center'>
+            <button
+              type='button'
+              className=' bg-ebonyClay p-2 rounded-full border border-gray-600 text-white hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-600 prev-arrow'
+              onClick={handlePrev}
+            >
+              <ChevronLeftIcon className='h-4 w-4' />
+            </button>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              ref={sliderRef}
+              breakpoints={{
+                500: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                800: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1180: {
+                  slidesPerView: 4,
+                  spaceBetween: 25,
+                },
+              }}
+            >
+              {CollectionsList.map((item) => (
+                <SwiperSlide key='Collections'>
+                  <CollectionsCard item={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <button
+              type='button'
+              className=' bg-ebonyClay p-2 rounded-full border border-gray-600 text-white hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-600 next-arrow'
+              onClick={handleNext}
+            >
+              <ChevronRightIcon className='h-4 w-4' />
+            </button>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

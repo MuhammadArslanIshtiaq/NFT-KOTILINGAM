@@ -704,10 +704,7 @@
 <stop stop-color="#0E1737"/>
 <stop offset="1" stop-color="#828AE2"/>
 </linearGradient>
-<linearGradient id="paint20_linear_269_31846" x1="27.9438" y1="108.724" x2="209.671" y2="213.22" gradientUnits="userSpaceOnUse">
-<stop stop-color="#111019"/>
-<stop offset="1" stop-color="#383985"/>
-</linearGradient>
+
 <linearGradient id="paint21_linear_269_31846" x1="482.141" y1="451.923" x2="476.042" y2="532.805" gradientUnits="userSpaceOnUse">
 <stop stop-color="#3E467E"/>
 <stop offset="1" stop-color="#6169B1"/>
