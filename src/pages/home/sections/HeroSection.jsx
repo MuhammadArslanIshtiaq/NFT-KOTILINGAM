@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import CountdownComponent from "../../../components/count-downs/CountdownComponent";
 
 const HeroSection = () => {
@@ -20,12 +19,12 @@ const HeroSection = () => {
                 Soul.
               </h1>
               <div className="mt-4">
-                <Link
-                  to
+                <a
+                  href="https://discord.gg/rpDTDUFU8U"
                   className="inline-flex items-center px-8 py-2 border-2 shadow-sm text-base font-medium rounded-xl text-[1rem] bg-primary text-black border-primary hover:text-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3"
                 >
                   Whitelist
-                </Link>
+                </a>
               </div>
             </div>
             {/* == */}
