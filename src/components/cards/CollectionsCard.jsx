@@ -5,7 +5,7 @@ const CollectionsCard = ({ item }) => {
     <div className="bg-ebony p-4 rounded-2xl">
       <div className="mb-2 h-[9rem] sm:h-[12.5rem]">
         <img
-          className="block h-full w-full rounded-2xl sm:w-4/5 sm:mx-auto"
+          className="block h-full w-11/12 rounded-2xl sm:w-full mx-auto"
           src={item.imageUrl}
           alt=".."
         />
