@@ -40,7 +40,7 @@ const ConnectSection = () => {
                   <li>
                     <a
                       className="block h-10 w-10 transition-all duration-500 transform hover:-rotate-12"
-                      href="http://www.reddit.com"
+                      href="https://www.reddit.com/user/Kotilingam_NFT"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
