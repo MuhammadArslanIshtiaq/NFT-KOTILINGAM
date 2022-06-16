@@ -53,7 +53,7 @@ const HeroSection = () => {
                     <small className="block text-[.8rem] font-normal text-gray-300">
                       Minting starts on
                     </small>
-                    <h6 className="text-[1.2rem] font-normal">17th Jun-2022</h6>
+                    <h6 className="text-[1.2rem] font-normal">TBD</h6>
                     <h6 className="text-[1.2rem] font-normal">8:00 PM EST</h6>
                   </div>
                   <div>

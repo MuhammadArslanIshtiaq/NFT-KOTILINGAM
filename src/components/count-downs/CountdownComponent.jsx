@@ -49,7 +49,8 @@ const CountdownComponent = () => {
   };
 
   return (
-    <Countdown date={"June 17, 2022 20:00:00 GMT-00:00"} renderer={renderer} />
+    // <Countdown date={"June 17, 2022 20:00:00 GMT-00:00"} renderer={renderer} />
+    <Countdown date={""} renderer={renderer} />
   );
 };
 
