@@ -6,7 +6,7 @@ const OurTeamSection = () => {
   const ourTeamList = [
     {
       duration: 0.5,
-      imageUrl: "/assets/images/tm-01.jpg",
+      imageUrl: "/assets/images/tm-1.png",
       name: "Futurologer",
       text: `Learning from the Past, Living the Present, Studying the Future.
     Techno Enthusiast, accumulating knowledge on all advancements and
@@ -15,7 +15,7 @@ const OurTeamSection = () => {
 
     {
       duration: 1,
-      imageUrl: "/assets/images/tm-02.jpg",
+      imageUrl: "/assets/images/tm-2.png",
       name: "Kiriya",
       text: `Kiriya is the Business Strategist and Marketing Expert, with strong Business acumen. Voyager of the Blue Ocean.`,
     },
