@@ -171,7 +171,7 @@ const MintCard = () => {
                 </ul>
                 <div className="mt-4">
                   <a
-                    href="https://discord.com/invite/rpDTDUFU8U"
+                    href="https://whitelist.kotilingam.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center text-center px-8 py-3 border-2 shadow-sm text-base font-medium rounded-2xl text-[1rem] bg-primary text-black border-primary hover:text-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3"

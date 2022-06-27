@@ -9,7 +9,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="pt-24 pb-16 md:h-[95vh] md:bg-center bg-cover bg-heroM md:bg-heroD relative z-20">
+    <section className="pt-24 pb-16 md:h-[95vh] md:bg-center bg-cover bg-heroM md:bg-heroD relative z-30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-full py-24">
         <div className="grid grid-cols-3 gap-y-6 h-full items-end">
           <div className="col-span-3 lg:col-span-2">
@@ -20,7 +20,7 @@ const HeroSection = () => {
               </h1>
               <div className="mt-4">
                 <a
-                  href="https://discord.com/invite/rpDTDUFU8U"
+                  href="https://whitelist.kotilingam.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-2 border-2 shadow-sm text-base font-medium rounded-xl text-[1rem] bg-primary text-black border-primary hover:text-white hover:border-primary-600 hover:bg-primary-600 focus:outline-none transition duration-200 transform hover:-skew-x-3"
