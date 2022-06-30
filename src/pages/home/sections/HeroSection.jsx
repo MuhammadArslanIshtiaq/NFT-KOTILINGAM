@@ -15,8 +15,8 @@ const HeroSection = () => {
           <div className="col-span-3 lg:col-span-2">
             <div className="mb-8">
               <h1 className="mb-5 font-titleBold leading-none text-[2rem] sm:text-[2.4rem] lg:text-[2.8rem] xl:text-[3rem] ">
-                Welcome to Kotilingam NFT, <br /> a Project for Mind, body and
-                Soul.
+                Welcome to Kotilingam NFT, <br /> World’s 1st NFT for Mind, body
+                and Soul.
               </h1>
               <div className="mt-4">
                 <a
